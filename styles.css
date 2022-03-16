@@ -73,6 +73,10 @@ body{
     height: 100vh;
     grid-column-start: 3;
     grid-column-end: 7; 
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #forms-container{
