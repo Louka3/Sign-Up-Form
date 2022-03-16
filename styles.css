@@ -9,12 +9,12 @@ img{
 /*-------------------------------------------------------------------------------
 Above is temporary styling so I can see the html I am working on as I write it */
 
-.form-container{
+form div{
     display: flex;
     flex-direction: column;
     padding-right: 30px;
 }
-form{
+#forms-container{
     display: grid;
     grid-gap: 2px;
     grid-template-columns: 350px 350px;
