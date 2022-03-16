@@ -1,13 +1,75 @@
+@import url("https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse");
+
 body{
-    background-color: rgb(129, 122, 122);
-}
-img{
-    height: 200px;
-    width: 200px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
-/*-------------------------------------------------------------------------------
-Above is temporary styling so I can see the html I am working on as I write it */
+.main-container{
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: fill;
+}
+
+.img-container{
+    background-image: url("starrySky.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container a{
+    color: white;
+}
+
+.img-footer{
+    color: white;
+    text-align: bottom;
+    position: absolute;
+    bottom: 0;
+    font-size: smaller;
+}
+
+#logo-background{
+    position: relative;
+    top: 185px;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-background img{
+    height: 100px;
+    width: 75px;
+}
+
+#logo-background p{
+    color: white;
+    font-family: "Norse", sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.user-container{
+    background-color: rgb(129, 122, 122);
+    margin: 0;
+    height: 100vh;
+    grid-column-start: 3;
+    grid-column-end: 7; 
+ }
 
 form div{
     display: flex;
