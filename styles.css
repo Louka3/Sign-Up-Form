@@ -77,27 +77,13 @@ body{
     margin: 0;
 }
 
-#forms-container{
-    color: white;
-    display: grid;
-    grid-gap: 2px;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: repeat(300px, 3);
-}
-
-form div{
-    display: flex;
-    flex-direction: column;
-    padding-right: 30px;
-}
-
 .top-container{
     align-items: center;
     background-color: #01191D;
     box-shadow: 1px 4px 15px 4px;
     display: flex;
-    justify-content: center;
-    padding: 30px 30px 30px 30px;
+    justify-content: left;
+    padding: 30px 30px 30px 100px;
     position: relative;
     z-index: 3;
 }
@@ -114,10 +100,26 @@ form div{
     background-color: #143B45 ;
     box-shadow: 1px 4px 15px 4px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding-top: 20px;
     position: relative;
     z-index: 2;
+}
+
+#forms-container{
+    color: white;
+    display: grid;
+    grid-column-gap: 200px;
+    grid-row-gap: 5px;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: repeat(300px, 3);
+    padding-left: 100px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
 }
 
 .bottom-container{
