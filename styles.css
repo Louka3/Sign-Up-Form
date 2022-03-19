@@ -1,4 +1,5 @@
 @import url("https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 
 body{
     margin: 0;
@@ -39,7 +40,9 @@ body{
     text-align: bottom;
     position: absolute;
     bottom: 0;
-    font-size: smaller;
+    font-size: xx-small;
+    font-family: "Fredoka";
+    padding-bottom: 10px;
 }
 
 #logo-background{
@@ -54,8 +57,8 @@ body{
 }
 
 #logo-background img{
-    height: 100px;
-    width: 75px;
+    height: 125px;
+    width: 100px;
 }
 
 #logo-background p{
@@ -80,7 +83,7 @@ body{
 .top-container{
     align-items: center;
     background-color: #01191D;
-    box-shadow: 1px 4px 15px 4px;
+    box-shadow: 0px 15px 10px -15px #111;
     display: flex;
     justify-content: left;
     padding: 30px 30px 30px 100px;
@@ -91,14 +94,14 @@ body{
 .text{
     color: white;
     font-family: sans-serif;
-    font-size: 50px;
-    width: 1400px;
+    font-size: 40px;
+    width: 1200px;
 }
 
 .middle-container{
     align-items: center;
     background-color: #143B45 ;
-    box-shadow: 1px 4px 15px 4px;
+    box-shadow: 0px 15px 10px -15px #111;
     display: flex;
     justify-content: left;
     padding-top: 20px;
@@ -113,13 +116,25 @@ body{
     grid-row-gap: 5px;
     grid-template-columns: 350px 350px;
     grid-template-rows: repeat(300px, 3);
-    padding-left: 100px;
+    margin-bottom: 20px;
+    /* padding-bottom: 100px; */
+    padding-left: 100px; 
 }
 
 form div{
     display: flex;
     flex-direction: column;
+    font-family: "Fredoka";
+    
     padding-right: 30px;
+}
+
+input{
+    width: 400px;
+}
+
+label{
+    font-size: 25px;
 }
 
 .bottom-container{
@@ -136,5 +151,6 @@ form div{
 }
 
 .create-account{
+    font-size: 20px;
     width: 200px;
 }
